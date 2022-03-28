@@ -1,0 +1,43 @@
+.header {
+	background-color: var(--dark-color);
+	color: var(--white-color);
+	padding: 22px 0px;
+
+	&__container {
+		@include flex-all-sb;
+	}
+
+	&__btn {
+		font-weight: 300;
+		font-size: 16px;
+		line-height: 20px;
+		color: var(--orange-color);
+		padding: 13px 26px;
+		background-color: transparent;
+		border: 1px solid var(--dark-orange-color);
+		margin-right: 30px;
+	}
+
+	&__tel {
+		color: var(--white-color);
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 23px;
+	}
+}
+
+.nav {
+	&__list {
+		@include flex;
+	}
+
+	&__item {
+		&:not(:last-child) {
+			margin-right: 30px;
+		}
+	}
+
+	&__link {
+		color: var(--color-white);
+	}
+}
