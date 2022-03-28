@@ -1,0 +1,62 @@
+.hero {
+	min-height: 100vh;
+	background-image: url("/img/hero_bg.png");
+	background-size: 100% 100%;
+	font-family: "Montserrat";
+	color: var(--white-color);
+
+	&__container {
+		padding-top: 170px;
+		@include flex-v-center;
+	}
+
+	&__ecommerce {
+		margin-top: 120px;
+		@include flex-v-center;
+	}
+
+	&__title {
+		&-main {
+			font-weight: 700;
+			font-size: 52px;
+			line-height: 70px;
+			color: var(--white-color);
+			max-width: 810px;
+			margin-top: 20px;
+			margin-bottom: 30px;
+		}
+
+		&-sub {
+			display: inline-block;
+			color: var(--orange-color);
+			font-weight: 700;
+			font-size: 23px;
+			line-height: 28px;
+			margin: 0;
+			margin-left: 12px;
+		}
+	}
+
+	&__text {
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 27px;
+
+		&-lower {
+			font-weight: 600;
+			font-size: 14px;
+			line-height: 17px;
+			font-variant: small-caps;
+		}
+	}
+
+	&__btn {
+		min-width: 330px;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 22px;
+		padding: 22px 20px 22px 20px;
+		background-color: var(--orange-color);
+		@include flex-all-sb;
+	}
+}

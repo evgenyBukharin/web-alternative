@@ -8,6 +8,10 @@ html {
 	box-sizing: inherit;
 }
 
+body {
+	background-color: var(--dark-color);
+}
+
 .page {
 	height: 100%;
 	font-family: var(--font-family, sans-serif);
@@ -108,4 +112,7 @@ a {
 
 .btn {
 	color: var(--color-white);
+
+	&__arrow {
+	}
 }
