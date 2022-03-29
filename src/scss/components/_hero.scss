@@ -1,8 +1,10 @@
 .hero {
+	position: relative;
+	z-index: 10;
 	min-height: 100vh;
 	background-image: url("/img/hero_bg.png");
 	background-size: 100% 100%;
-	font-family: "Montserrat";
+	font-family: "Montserrat", sans-serif;
 	color: var(--white-color);
 
 	&__container {
@@ -43,6 +45,8 @@
 		line-height: 27px;
 
 		&-lower {
+			margin-top: 0;
+			margin-bottom: 15px;
 			font-weight: 600;
 			font-size: 14px;
 			line-height: 17px;
@@ -55,8 +59,39 @@
 		font-weight: 400;
 		font-size: 18px;
 		line-height: 22px;
-		padding: 22px 20px 22px 20px;
+		padding-left: 22px;
 		background-color: var(--orange-color);
 		@include flex-all-sb;
+	}
+
+	&__content {
+		display: flex;
+
+		&-main {
+			max-height: 660px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+
+		&-side {
+			position: relative;
+		}
+
+		&-image {
+			position: relative;
+			z-index: 15;
+		}
+
+		&-bgimage {
+			position: absolute;
+			left: 30px;
+			top: -20px;
+			z-index: 10;
+		}
+	}
+
+	&__arrow {
+		margin-bottom: -2px;
 	}
 }
