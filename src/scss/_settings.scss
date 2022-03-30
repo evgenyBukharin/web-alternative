@@ -112,9 +112,24 @@ a {
 
 .btn {
 	color: var(--color-white);
+	cursor: pointer;
 
-	&-arrow {
+	&__primary {
+		min-width: 330px;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 22px;
+		padding-left: 22px;
+		background-color: var(--orange-color);
+		@include flex-all-sb;
+	}
+
+	&__arrow {
 		background-color: var(--dark-orange-color);
 		padding: 18px 20px 18px 20px;
+
+		&-image {
+			margin-top: -2px;
+		}
 	}
 }

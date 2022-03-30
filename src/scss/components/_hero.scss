@@ -54,17 +54,9 @@
 		}
 	}
 
-	&__btn {
-		min-width: 330px;
-		font-weight: 400;
-		font-size: 18px;
-		line-height: 22px;
-		padding-left: 22px;
-		background-color: var(--orange-color);
-		@include flex-all-sb;
-	}
-
 	&__content {
+		position: relative;
+		z-index: 40;
 		display: flex;
 
 		&-main {
@@ -89,9 +81,5 @@
 			top: -20px;
 			z-index: 10;
 		}
-	}
-
-	&__arrow {
-		margin-bottom: -2px;
 	}
 }
