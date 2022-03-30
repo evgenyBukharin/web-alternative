@@ -74,6 +74,14 @@
 		}
 	}
 
+	&__icon {
+		display: none;
+
+		&-active {
+			display: block;
+		}
+	}
+
 	&__text {
 		text-align: center;
 		text-transform: uppercase;
@@ -96,6 +104,38 @@
 	}
 
 	&__image {
+		position: relative;
 		z-index: 30;
+
+		&-center {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		&-first {
+			transform: translate(-56%, -63%);
+		}
+
+		&-second {
+			transform: translate(-52%, -55%);
+		}
+
+		&-third {
+			transform: translate(-47%, -55%);
+		}
+
+		&-fourth {
+			transform: translate(-59%, -58%);
+		}
+
+		&-fiveth {
+			transform: translate(-56%, -58%);
+		}
+
+		&-sixth {
+			transform: translate(-56%, -56%);
+		}
 	}
 }

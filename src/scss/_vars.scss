@@ -10,7 +10,7 @@
 	);
 
 	//bg
-	--background-primary: url("/img/primary_bg.png") no-repeat center center;
+	--background-primary: url("/img/primary_bg.png") no-repeat;
 
 	// colors
 	--white-color: #fff;
@@ -19,4 +19,6 @@
 	--orange-color: #ff834e;
 	--dark-orange-color: #de774b;
 	--orange-hover-color: #ef8b54;
+	--case-item-color: #141414;
+	--purple-color: #50386f;
 }

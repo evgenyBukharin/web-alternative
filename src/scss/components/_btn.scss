@@ -1,0 +1,49 @@
+.btn {
+	color: var(--color-white);
+	cursor: pointer;
+
+	&__primary {
+		min-width: 330px;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 22px;
+		padding-left: 22px;
+		background-color: var(--orange-color);
+		@include flex-all-sb;
+
+		&-purple {
+			background: var(--purple-color);
+		}
+	}
+
+	&__arrow {
+		background-color: var(--dark-orange-color);
+		padding: 18px 20px 18px 20px;
+
+		&-image {
+			margin-top: -2px;
+		}
+
+		&-text {
+			margin-right: 8px;
+		}
+
+		&-purple {
+			background: linear-gradient(
+				147.62deg,
+				#8d5dcc -128.51%,
+				#55329e 221.38%
+			);
+			box-shadow: 0px 5px 10px rgba(94, 56, 158, 0.35);
+		}
+	}
+
+	&__text {
+		padding-right: 20px;
+
+		&-purple {
+			text-align: start;
+			min-width: 750px;
+		}
+	}
+}

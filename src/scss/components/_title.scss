@@ -1,0 +1,30 @@
+.title {
+	&__h2 {
+		font-family: "Montserrat", sans-serif;
+		font-weight: 400;
+		font-size: 42px;
+		line-height: 51px;
+		color: var(--white-color);
+		text-align: center;
+	}
+
+	&__h4 {
+		font-family: "Roboto";
+		font-weight: 600;
+		font-size: 26px;
+		line-height: 41px;
+		color: var(--white-color);
+		margin: 0;
+	}
+
+	&__h5 {
+		font-family: "Roboto";
+		font-style: normal;
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 21px;
+		color: var(--white-color);
+		opacity: 0.8;
+		margin: 0;
+	}
+}

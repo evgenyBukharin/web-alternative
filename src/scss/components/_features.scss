@@ -26,6 +26,7 @@
 		flex-direction: column;
 		justify-content: center;
 		max-width: 650px;
+		margin-bottom: 70px;
 	}
 
 	&__content {
@@ -69,22 +70,43 @@
 		color: var(--white-color);
 		opacity: 0.4;
 		transition: all 0.2s ease;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 22px;
+		text-decoration-line: underline;
+		cursor: pointer;
 
-		&:hover {
+		&-active {
 			color: var(--orange-hover-color);
 			opacity: 1;
 			transition: all 0.2s ease;
 		}
 	}
 
-	&__item {
-		font-weight: 400;
-		font-size: 18px;
-		line-height: 22px;
-		text-decoration-line: underline;
-
+	&__btn {
 		&:not(:last-child) {
 			margin-right: 100px;
+		}
+	}
+
+	&__images {
+		width: 515px;
+		height: 825px;
+		position: relative;
+	}
+
+	&__image {
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0;
+		visibility: hidden;
+		transition: all 0.4s ease;
+
+		&-active {
+			opacity: 1;
+			visibility: visible;
+			transition: all 0.4s ease;
 		}
 	}
 }
