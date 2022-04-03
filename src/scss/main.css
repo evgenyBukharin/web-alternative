@@ -301,7 +301,7 @@ a {
 
 .hero {
   width: 100%;
-  background-image: url("/img/hero_bg.png");
+  background-image: url("./img/hero_bg.png");
   background-position: center center;
   background-size: contain;
 }

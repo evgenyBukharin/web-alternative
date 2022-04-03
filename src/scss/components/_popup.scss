@@ -1,0 +1,37 @@
+.popup {
+	&__body {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -80%);
+		padding: 50px 65px;
+		background-color: #262626;
+		color: var(--white-color);
+	}
+
+	&__content {
+		max-width: 590px;
+	}
+
+	&__title {
+		margin: 0;
+		font-weight: 600;
+		font-size: 26px;
+		line-height: 41px;
+		margin-bottom: 30px;
+	}
+
+	&__text {
+		margin: 0;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 29px;
+	}
+
+	&__x {
+		position: absolute;
+		top: -45px;
+		right: -45px;
+		cursor: pointer;
+	}
+}

@@ -10,11 +10,13 @@
 	);
 
 	//bg
-	--background-primary: url("/img/primary_bg.png") no-repeat;
+	--background-primary: url("/img/primary_bg.png") no-repeat center center;
 
 	// colors
 	--white-color: #fff;
 	--dark-color: #202020;
+	--checkbox-border-color: #d0d0d0;
+	--placeholder-color: #595959;
 	--accent-dark-color: #171718;
 	--orange-color: #ff834e;
 	--dark-orange-color: #de774b;

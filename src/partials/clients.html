@@ -2,70 +2,98 @@
 	<div class="container">
 		<h2 class="title__h2 clients__title">Наши клиенты</h2>
 		<div class="clients__container">
-			<div class="clients__image">
+			<div
+				class="clients__image clients__image-active"
+				data-number="1"
+				id="client1"
+			>
 				<svg
 					class="clients__image-round"
 					width="317"
 					height="317"
 					fill="var(--white-color)"
 				>
-					<use xlink:href="img/sprite.svg#round"></use>
+					<use xlink:href="./img/sprite.svg#round"></use>
 				</svg>
 				<img
 					loading="lazy"
-					src="/img/clients/rivera.png"
+					src="./img/clients/rivera.png"
 					class="image clients__client clients__client-first"
 					alt="Изображение Rivera"
 				/>
 			</div>
-			<div class="clients__image">
+			<div class="clients__image" data-number="2" id="client2">
 				<svg
 					class="clients__image-round"
 					width="317"
 					height="317"
 					fill="var(--white-color)"
 				>
-					<use xlink:href="img/sprite.svg#round"></use>
+					<use xlink:href="./img/sprite.svg#round"></use>
 				</svg>
 				<img
 					loading="lazy"
-					src="/img/clients/apteka.png"
+					src="./img/clients/apteka.png"
 					class="image clients__client clients__client-second"
 					alt="Изображение аптека"
 				/>
 			</div>
-			<div class="clients__image">
+			<div class="clients__image" data-number="3" id="client3">
 				<svg
 					class="clients__image-round"
 					width="317"
 					height="317"
 					fill="var(--white-color)"
 				>
-					<use xlink:href="img/sprite.svg#round"></use>
+					<use xlink:href="./img/sprite.svg#round"></use>
 				</svg>
 				<img
 					loading="lazy"
-					src="/img/clients/stereo.png"
+					src="./img/clients/stereo.png"
 					class="image clients__client clients__client-third"
 					alt="Изображение стерео"
 				/>
 			</div>
-			<div class="clients__image">
+			<div class="clients__image" data-number="4" id="client4">
 				<svg
 					class="clients__image-round"
 					width="317"
 					height="317"
 					fill="var(--white-color)"
 				>
-					<use xlink:href="img/sprite.svg#round"></use>
+					<use xlink:href="./img/sprite.svg#round"></use>
 				</svg>
 				<img
 					loading="lazy"
-					src="/img/clients/pomidor.png"
+					src="./img/clients/pomidor.png"
 					class="image clients__client clients__client-fourth"
 					alt="Изображение Италия"
 				/>
 			</div>
+		</div>
+		<div class="clients__buttons">
+			<button class="btn-reset clients__buttons-body">
+				<img
+					loading="lazy"
+					src="./img/Button.svg"
+					class="image"
+					width="74"
+					height="74"
+					alt="Кнопка назад"
+					id="btnBackward"
+				/>
+			</button>
+			<button class="btn-reset clients__buttons-body">
+				<img
+					loading="lazy"
+					src="./img/Button.svg"
+					class="image reverse-180"
+					width="74"
+					height="74"
+					alt="Кнопка вперед"
+					id="btnForward"
+				/>
+			</button>
 		</div>
 	</div>
 </section>

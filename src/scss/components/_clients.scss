@@ -8,6 +8,10 @@
 	&__container {
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
+		gap: 30px;
+		counter-reset: clients 1;
+		margin-top: 135px;
+		margin-bottom: 70px;
 	}
 
 	&__title {
@@ -23,7 +27,37 @@
 			position: absolute;
 			top: 50%;
 			left: 50%;
+			z-index: 42;
 			transform: translate(-50%, -50%);
+		}
+
+		&-round {
+			position: relative;
+			z-index: 42;
+		}
+
+		&::before {
+			content: "0" counter(clients);
+			z-index: 25;
+			position: absolute;
+			top: -40px;
+			right: -20px;
+			font-weight: 700;
+			font-size: 190px;
+			line-height: 144px;
+			opacity: 0.1;
+			color: var(--white-color);
+			transition: all 0.2s ease;
+		}
+
+		&-active {
+			&::before {
+				color: var(--orange-color);
+				opacity: 1;
+				text-shadow: 5px 5px 5px rgba(239, 139, 84, 0.15);
+				z-index: 25;
+			}
+			transition: all 0.2s ease;
 		}
 	}
 
@@ -31,26 +65,38 @@
 		max-width: 160px;
 		width: 100%;
 		position: absolute;
+		z-index: 43;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
+		counter-increment: clients;
 
 		&-first {
-			transform: translate(-66%, -60%);
+			transform: translate(-58%, -60%);
 		}
 
 		&-second {
 			max-width: 200px;
-			transform: translate(-60%, -57%);
+			transform: translate(-55%, -57%);
 		}
 
 		&-third {
-			transform: translate(-67%, -55%);
+			transform: translate(-60%, -55%);
 		}
 
 		&-fourth {
 			max-width: 215px;
-			transform: translate(-62%, -63%);
+			transform: translate(-58%, -63%);
+		}
+	}
+
+	&__buttons {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+
+		&-body {
+			margin-right: 50px;
 		}
 	}
 }

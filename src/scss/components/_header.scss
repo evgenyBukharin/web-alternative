@@ -52,3 +52,30 @@
 		line-height: 17px;
 	}
 }
+
+@media (max-width: 320px) {
+	.container {
+		min-width: 100vw;
+	}
+	.header {
+		&__btn {
+			visibility: hidden;
+			opacity: 0;
+		}
+
+		&__tel {
+			visibility: hidden;
+			opacity: 0;
+		}
+
+		&__logo {
+			width: 230px;
+			height: 32px;
+		}
+	}
+
+	.nav {
+		visibility: hidden;
+		opacity: 0;
+	}
+}

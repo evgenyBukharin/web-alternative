@@ -1,0 +1,33 @@
+input[type="checkbox"] {
+	position: relative;
+	width: 22px;
+	height: 22px;
+	color: var(--dark-color);
+	border: 1px solid var(--checkbox-border-color);
+	appearance: none;
+	outline: 0;
+	cursor: pointer;
+	transition: background 0.2s cubic-bezier(0.1, 0.1, 0.25, 1);
+	&::before {
+		position: absolute;
+		content: "";
+		display: block;
+		top: 2px;
+		left: 7px;
+		width: 7px;
+		height: 13px;
+		border-style: solid;
+		border-color: var(--orange-color);
+		border-width: 0 2px 2px 0;
+		transform: rotate(45deg);
+		opacity: 0;
+	}
+	&:checked {
+		color: var(--white-color);
+		border-color: var(--checkbox-border-color);
+		background: var(--white-color);
+		&::before {
+			opacity: 1;
+		}
+	}
+}
