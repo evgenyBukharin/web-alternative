@@ -29,8 +29,13 @@
 	}
 
 	&__logo {
-		width: 230px;
-		height: 32px;
+		&-desktop {
+			display: block;
+		}
+
+		&-mobile {
+			display: none;
+		}
 	}
 }
 
@@ -58,6 +63,8 @@
 		min-width: 100vw;
 	}
 	.header {
+		padding: 22px 0px;
+
 		&__btn {
 			visibility: hidden;
 			opacity: 0;
@@ -69,8 +76,13 @@
 		}
 
 		&__logo {
-			width: 230px;
-			height: 32px;
+			&-desktop {
+				display: none;
+			}
+
+			&-mobile {
+				display: block;
+			}
 		}
 	}
 
