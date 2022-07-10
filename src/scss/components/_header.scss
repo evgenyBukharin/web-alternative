@@ -39,55 +39,10 @@
 	}
 }
 
-.nav {
-	&__list {
-		@include flex;
-	}
-
-	&__item {
-		&:not(:last-child) {
-			margin-right: 30px;
-		}
-	}
-
-	&__link {
-		color: var(--color-white);
-		font-weight: 600;
-		font-size: 14px;
-		line-height: 17px;
-	}
-}
-
-@media (max-width: 320px) {
-	.container {
-		min-width: 100vw;
-	}
+@media (max-width: 1024px) {
 	.header {
-		padding: 22px 0px;
-
-		&__btn {
-			visibility: hidden;
-			opacity: 0;
+		&__container {
+			flex-wrap: wrap;
 		}
-
-		&__tel {
-			visibility: hidden;
-			opacity: 0;
-		}
-
-		&__logo {
-			&-desktop {
-				display: none;
-			}
-
-			&-mobile {
-				display: block;
-			}
-		}
-	}
-
-	.nav {
-		visibility: hidden;
-		opacity: 0;
 	}
 }

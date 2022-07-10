@@ -1,0 +1,27 @@
+.nav {
+	&__list {
+		@include flex;
+	}
+
+	&__item {
+		&:not(:last-child) {
+			margin-right: 30px;
+		}
+	}
+
+	&__link {
+		color: var(--color-white);
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 17px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.nav {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		margin-top: 18px;
+	}
+}
